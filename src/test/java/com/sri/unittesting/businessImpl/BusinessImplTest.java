@@ -1,6 +1,7 @@
 package com.sri.unittesting.businessImpl;
 
 import static org.junit.Assert.*;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.Arrays;
@@ -67,6 +68,8 @@ public class BusinessImplTest {
 		when(someServiceMock.getData()).thenReturn(new int[] { 1, 2, 3, 4 });
 
 //		businessImpl.setSomeService(someServiceMock);
+		
+//		System.out.println(someServiceMock.getData());
 
 		assertEquals(10, businessImpl.calculateSumFromService());
 
